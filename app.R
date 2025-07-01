@@ -11,7 +11,7 @@ library(ggplot2)
 library(janitor)
 
 # Load dan bersihkan data Kaplan-Meier
-df <- read_xlsx("Data/Data_R.xlsx") %>%
+df <- read_xlsx("Data_R.xlsx") %>%
   janitor::clean_names()
 
 faktor_vars <- c("jenis_kelamin", "jenis_operasi", "lokasi_tumor", "asa",
